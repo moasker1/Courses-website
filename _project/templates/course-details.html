@@ -1,0 +1,290 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Course Details - Mentor Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Load static template tag -->
+  {% load static %}
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Mentor - v4.10.0
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="{% url 'index' %}">Mentor</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="{% url 'index' %}" class="logo me-auto"><img src="{% static 'img/logo.png' %}" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a class="active" href="{% url 'courses' %}">Courses</a></li>
+          <li><a href="{% url 'trainers' %}">Trainers</a></li>
+          <li><a href="{% url 'events' %}">Events</a></li>
+          <li><a href="{% url 'pricing' %}">Pricing</a></li>
+
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="{% url 'courses' %}" class="get-started-btn">Get Started</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs" data-aos="fade-in">
+      <div class="container">
+        <h2>Course Details</h2>
+        <p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Course Details Section ======= -->
+    <section id="course-details" class="course-details">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-8">
+            <img src="{% static 'img/course-details.jpg' %}" class="img-fluid" alt="">
+            <h3>Et enim incidunt fuga tempora</h3>
+            <p>
+              Qui et explicabo voluptatem et ab qui vero et voluptas. Sint voluptates temporibus quam autem. Atque nostrum voluptatum laudantium a doloremque enim et ut dicta. Nostrum ducimus est iure minima totam doloribus nisi ullam deserunt. Corporis aut officiis sit nihil est. Labore aut sapiente aperiam.
+              Qui voluptas qui vero ipsum ea voluptatem. Omnis et est. Voluptatem officia voluptatem adipisci et iusto provident doloremque consequatur. Quia et porro est. Et qui corrupti laudantium ipsa.
+              Eum quasi saepe aperiam qui delectus quaerat in. Vitae mollitia ipsa quam. Ipsa aut qui numquam eum iste est dolorum. Rem voluptas ut sit ut.
+            </p>
+          </div>
+          <div class="col-lg-4">
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Trainer</h5>
+              <p><a href="#">Walter White</a></p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Course Fee</h5>
+              <p>$165</p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Available Seats</h5>
+              <p>30</p>
+            </div>
+
+            <div class="course-info d-flex justify-content-between align-items-center">
+              <h5>Schedule</h5>
+              <p>5.00 pm - 7.00 pm</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Course Details Section -->
+
+    <!-- ======= Course Details Tabs Section ======= -->
+    <section id="course-details-tabs" class="course-details-tabs">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Modi sit est</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Unde praesentium sed</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Pariatur explicabo vel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Nostrum qui quasi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Iusto ut expedita aut</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Architecto ut aperiam autem id</h3>
+                    <p class="fst-italic">Est autem sunt rerum excepturi optio reprehenderit</p>
+                    <p>
+                      Voluptatem omnis est autem et accusamus. Eligendi omnis ut enim ut nobis est minus est aut. Et ut rem quidem est. Aut sequi eligendi quisquam cumque ipsa esse omnis laborum veniam. Rem iure voluptatibus mollitia et ut dolores. Est autem sunt rerum excepturi optio reprehenderit.
+                      Reprehenderit rerum assumenda quia. Voluptas repellat est et qui expedita saepe. Aut id repellat debitis. Eum deleniti sint molestiae sapiente sunt distinctio sed. Nam impedit in consequatur.
+                      Non hic autem qui nam dignissimos. Qui omnis non dolorum aut velit. Voluptatem odit inventore iure quaerat autem ut. Quod aut consequatur officiis sit.
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/course-details-1.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <h3>Dolorem est fugiat occaecati</h3>
+                <p>
+                  Est sunt quidem sit consequatur tempore ut. Est molestiae vel sunt provident. Voluptatem est qui aut soluta. Iure dolorem cumque inventore et consequatur. Soluta eaque suscipit deserunt reiciendis et.
+                  Quisquam qui blanditiis nisi reprehenderit et est quia doloribus quia. Distinctio maiores quis rerum dolor. Aut voluptatem quisquam. Facere quo non voluptates est saepe. 
+                  Incidunt magnam eveniet placeat dolorem nesciunt velit pariatur et expedita eaque. Est ipsa velit excepturi quia placeat sunt. Rerum alias qui explicabo aut quo suscipit consequatur quaerat rerum.
+                </p>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <h3>Non est dolores ut aliquid consequatur</h3>
+                <p>
+                  Consequatur non occaecati inventore officia in quo. Quasi pariatur sint eos est tenetur. Nam id non minus qui minus sed quos. Sint qui est iusto nihil et non. Nam nisi quia et quos voluptatem in. Non ad officia beatae.
+                  Eveniet sint mollitia recusandae necessitatibus. Recusandae laboriosam aut omnis. Aut aut explicabo est occaecati nesciunt pariatur esse. Esse consequatur sunt voluptatum quia est. Ipsum porro itaque sed vel amet. Ut earum in vel sit velit magnam reiciendis.
+                </p>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <h3>Aliquam ex ea commodi numquam</h3>
+                <p>
+                  Incidunt ad mollitia magnam. Qui aut incidunt nihil doloremque. Ipsum occaecati maiores et est ipsa est eveniet excepturi. Sint est magni assumenda perferendis. Quia est impedit est est. 
+                  Natus sit accusamus consequatur omnis rem est vel et doloribus. Nostrum soluta voluptas assumenda fugiat voluptatibus accusamus dignissimos aut. Non alias omnis et. Dolores ut omnis ab officiis nobis. 
+                </p>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <h3>Dicta sunt explicabo</h3>
+                <p>
+                  Qui sunt inventore qui repellendus sint sapiente alias. Aut qui et doloremque et qui sed. Perferendis incidunt eum quos consequatur rerum soluta. Odit recusandae ut tempora quia voluptatum qui.
+                  Ut non ut numquam voluptatum. Reprehenderit nam occaecati. Laboriosam omnis magni deserunt veniam consequatur omnis dolore est. Qui hic est ut est et. Aut tempora quisquam qui esse soluta facilis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Course Details Tabs Section -->
+
+    <!-- ======= Trainers Section ======= -->
+    <section id="trainers" class="trainers">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Trainers</h2>
+          <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet. </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="member">
+              <img src="{% static 'img/trainers/trainer-1.jpg' %}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Master Instructor</span>
+                  <p>Aut maiores voluptates amet et quis praesentium qui senda para...</p>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Repeat for other trainers -->
+          <!-- Example: -->
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="member">
+              <img src="{% static 'img/trainers/trainer-2.jpg' %}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Jane Doe</h4>
+                  <span>Senior Instructor</span>
+                  <p>Ad mollitia non recusandae ex qui. Non delectus saepe quis velit accusantium.</p>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more trainers as needed -->
+
+        </div>
+
+      </div>
+    </section><!-- End Trainers Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Mentor</h3>
+      <p>Incididunt sunt quas at, minus dolorum ut numquam aut quibusdam. Non omnis dolorum aut ut doloribus cumque qui.</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Mentor. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
